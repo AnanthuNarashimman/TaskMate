@@ -110,12 +110,14 @@ window.addEventListener('click', function(e) {
 
     //task saving functionality after editing it
     if(e.target.classList.contains('savebtn') && e.target.classList.contains('editbtn')){
+        let textArea = e.target.parentElement.querySelector('.taskarea');
         console.log("Saved successfully");
         let selectedTask = e.target.parentElement.querySelector('.taskarea');
         selectedTask.readOnly=true;
         e.target.innerText='Edit';
         selectedTask.classList.add('pointerclass');
         e.target.classList.remove('savebtn');
+        adjustHeight(textArea);
         saveTask();
         return;
     }
