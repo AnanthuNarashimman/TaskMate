@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/827b3390e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2 class="logo">Task Mate</h2>
+        <div class="contactIcons">
+            <div class="menu-item gvisit" data-title="G-mail">
+                <i class="fa-regular fa-envelope gicon icon"></i>
+            </div>
+        
+            <div class="menu-item lvisit" data-title="View LinkedIn Profile">
+                <i class="fa-brands fa-linkedin licon icon"></i>
+            </div>
+        
+            <div class="menu-item gitvisit" data-title="View GitHub Profile">
+                <i class="fa-brands fa-github  giticon icon"></i>
+            </div>
+        
+        </div>
+        
+        <div class="codeLink" data-title="View this Repository">
+            <i class="fa-solid fa-code"></i>
+        </div>
+
+    </div>
+
+    <div class="inputArea">
+        <h3>Add Task</h3>
+        <form>
+            <input class="taskbox" type="text" placeholder="Enter Your task here.." required>
+            <button class="sbtn">Add Task</button>
+        </form>
+    </div>
+
+    <ul class="addedTasks">
+        <!-- <li class="tasks"><textarea class="taskarea"  wrap="soft" rows="1"  oninput="adjustHeight(this)"></textarea><i class="fa-solid fa-xmark"></i><button class="editbtn">Edit</button></li> -->
+    </ul>
+
+
+    <!-- Gmailvisit -->
+    <div class="gcontentarea contentarea">
+
+        
+        <div class="go-back-btn-g gback">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    
+            
+            <div class="gmailimg">
+                <img src="gmail.png">
+            </div>
+    
+            <h3 class="description"> Hey there! I'm Ananthu<br><br><br>Got an idea or a question? Feel free to reach out. I'm always open to new ideas and discussions.<br><br>Contact me through the email address below:</h3>
+    
+            <h4 class="gmail">ananthun420@gmail.com</h4>
+    
+        <a href="mailto:ananthun420@gmail.com" class="tomaillink"><i class="fa-solid fa-paper-plane"></i>Send a mail..</a>
+    
+        </div>
+
+    
+    <!-- LinkedIn visit -->
+
+    <div class="lcontentarea contentarea">
+
+        <div class="go-back-btn-l gback">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+            
+            <div class="linkedinimg">
+                <img src="linkedin.png">
+            </div>
+
+        
+        <h3 class="linkedin-heading">Connect with Me on LinkedIn</h3>
+        <div class="linkedin-profile">
+            <div class="profile-info">
+                <h5>I'm always eager to grow my network. Feel free to connect with me on LinkedIn for professional opportunities and discussions.</h5>
+                <h4>Ananthu N</h4>
+                <p>Computer Science Student | Aspiring Web Developer</p>
+                <a href="https://www.linkedin.com/in/ananthu-n-12785428b/" target="_blank" class="linkedin-btn"><i class="fab fa-linkedin"></i> View LinkedIn Profile</a>
+            </div>
+        </div>
+    
+        </div>
+    
+    <!-- gitvisit -->
+
+    <div class="gitcontentarea contentarea">
+
+        <div class="go-back-btn-git gback">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+            
+            <div class="gitimg">
+                <img src="github-logo.png">
+            </div>
+
+        
+        <h3 class="git-heading">Explore my GitHub Projects</h3>
+        <div class="git-profile">
+            <div class="profile-info">
+                <h5>Check out my coding projects and contributions on GitHub. Collaborate or explore to see my latest work in action.</h5>
+                <h4>Ananthu Narashimman</h4>
+                <p>Web Developer | Open Source Contributor</p>
+                <a href="https://github.com/AnanthuNarashimman" target="_blank" class="git-btn"><i class="fab fa-github"></i> View GitHub Profile</a>
+            </div>
+        </div>
+    
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
