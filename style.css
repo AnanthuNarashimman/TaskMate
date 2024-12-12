@@ -127,6 +127,10 @@ body {
     opacity: 1;
 }
 
+.codeLink a {
+    text-decoration: none;
+}
+
 .codeLink::after {
     content: attr(data-title);
     position: absolute;
